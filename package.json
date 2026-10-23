@@ -1,0 +1,20 @@
+{
+  "name": "creator-queue-worker-adr",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx tests/creator_queue_worker.test.ts",
+    "seed": "node --import tsx src/run_creator_queue.ts seed",
+    "worker": "node --import tsx src/run_creator_queue.ts worker"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
